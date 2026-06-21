@@ -1,0 +1,17 @@
+# Set technology name
+set technology "STcmos65"
+
+# Set search paths
+set search_path ""
+lappend search_path "./tech/${technology}"
+
+# Define libraries
+set libraries ""
+lappend libraries "CORE65LPSVT_bc_1.30V_m40C.db"
+lappend libraries "CORE65LPSVT_wc_1.10V_125C.db"
+lappend libraries "CORE65LPSVT_nom_1.20V_25C.db"
+lappend libraries "CORE65LPLVT_nom_1.20V_25C.db"
+lappend libraries "CORE65LPHVT_nom_1.20V_25C.db"
+
+# Link library for baseline synthesis (HVT)
+lappend link_library [lindex $libraries 4]

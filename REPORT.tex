@@ -1,0 +1,90 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[
+    top=1cm,
+    bottom=2.5cm,
+    left=2.5cm,
+    right=2.5cm
+]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{caption}
+
+\title{
+    \textbf{SODS Final Project - Group 26}\\[0.5em]
+    \large
+    \begin{tabular}{ccc}
+        Name Surname sID & Name Surname sID & Name Surname sID
+    \end{tabular}
+}
+
+\begin{document}
+
+\date{}
+
+\maketitle
+\vspace{-2cm}
+\section{Baseline Synthesis}
+
+\begin{table}[h]
+\centering
+\caption{Baseline synthesis results}
+\begin{tabular}{lc}
+\toprule
+\textbf{Metric} & \textbf{Value} \\
+\midrule
+Clock period (ns) &  \\
+Area ($\mu m^2$) &  \\
+Slack (ns) &  \\
+Leakage power (mW) &  \\
+Dynamic power (mW) &  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Power Optimization}
+
+\subsection{Clock-Gating}
+
+\begin{table}[h]
+\centering
+\caption{Clock-gating optimization results}
+\begin{tabular}{lc}
+\toprule
+\textbf{Metric} & \textbf{Value} \\
+\midrule
+Area ($\mu m^2$) &  \\
+Slack (ns) &  \\
+Leakage power (mW) &  \\
+Dynamic power (mW) &  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Discussion.} ...
+% Discuss and motivate the impact of clock gating on PPA metrics.
+
+\subsection{Clock-Gating + Multi-VT}
+
+\begin{table}[h]
+\centering
+\caption{Clock-gating and Multi-VT optimization results}
+\begin{tabular}{lc}
+\toprule
+\textbf{Metric} & \textbf{Value} \\
+\midrule
+Percentage of LVT cells (\%) &  \\
+Percentage of SVT cells (\%) &  \\
+Percentage of HVT cells (\%) &  \\
+Area ($\mu m^2$) &  \\
+Slack (ns) &  \\
+Leakage power (mW) &  \\
+Dynamic power (mW) &  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Discussion.} ...
+% Discuss and motivate the impact of Multi-VT synthesis on PPA metrics.
+
+\end{document}
